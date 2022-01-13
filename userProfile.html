@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d798f3890.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* #7FC2C2
+      #E1774B
+      #F4DB60 */
+      :root {
+        --maincolor: #dcdde1;
+        --color: #f5f6fa;
+        --buttoncolor: #7f8fa6;
+      }
+      header {
+        background: var(--color);
+      }
+      nav {
+        padding: 10px;
+        position: relative;
+        text-align: end;
+      }
+      nav a {
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+        color: black;
+      }
+      .nav-menu {
+        display: inline;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+      }
+      nav input {
+        width: 25%;
+        background: var(--maincolor);
+        border: none;
+        padding: 5px;
+      }
+      nav button {
+        padding: 5px 25px;
+        border: none;
+        background: var(--buttoncolor);
+        color: var(--color);
+      }
+      nav button:hover{
+        background: #718093;
+      }
+      select {
+        border: none;
+        padding: 5px;
+        background: var(--maincolor);
+      }
+      .banner img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      /*  */
+      .about {
+        background: #7f8fa6;
+        position: relative;
+      }
+      .about .photo {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+      }
+      .about img {
+        width: 100%;
+      }
+      .about .name {
+        color: black;
+        font-weight: 700;
+        font-size: xx-large;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .about .address {
+        color: rgb(145, 142, 142);
+        text-align: center;
+        padding-top: 5px;
+      }
+      .about .introduce {
+        text-align: center;
+        padding: 20px;
+      }
+      /* number */
+      .num{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .wrap{
+        display: flex;
+      }
+      .wrap .item{
+        padding: 20px 10px;
+        text-align: center;
+        margin: 0 20px;
+
+      }
+      .num button{
+        padding: 5px 25px;
+        border: none;
+        background: var(--buttoncolor);
+        color: var(--color);
+        margin: 25px;
+      }
+      .num button:hover{
+        background: #718093;
+      }
+      /* Trading */
+      .Trading {
+        background: var(--maincolor);
+      }
+      .container{
+        width: 80%;
+        margin: auto;
+        padding: 20px 0;
+      }
+      .cards{
+        display: flex;
+        justify-content: space-around;
+      }
+      .card{
+        background: var(--color);
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .card-img{
+        width: 100%;
+      }
+      .card-text{
+        padding: 10px 15px;
+      }
+      .card-text{
+        font-weight: 700;
+      }
+      .card-text-introduce{
+        color:var(--maincolor) ;
+      }
+      .card-bottom{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .card-bottom .mommy{
+        padding: 5px;
+      }
+      .card-bottom button{
+        padding: 5px 25px;
+        border: none;
+        background: var(--buttoncolor);
+        color: var(--color);
+      }
+      .card-bottom button:hover{
+        background: #718093;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-menu">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <a href="#">Trade</a>
+        <a href="#">Clecks</a>
+        <a href="#">Trade</a>
+        <a href="#">Clecks</a>
+        <select name="" id="">
+          <option>please choose...</option>
+          <option>Dog</option>
+          <option>Cat</option>
+        </select>
+        <input type="text" placeholder="cars" />
+        <button>search</button>
+        <select name="" id="">
+          <option>Sign In</option>
+        </select>
+      </nav>
+      <div class="banner">
+        <img
+          src="https://i.picsum.photos/id/256/1300/300.jpg?hmac=K0Y90YLYPPlUprDlHdbCDH-KSMqiCVllJWE8qp3qgGo"
+          alt=""
+        />
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="photo">
+          <img
+            src="https://i.picsum.photos/id/318/200/200.jpg?hmac=bXfpcSpOySqXMIev1AISKO15vvxPgau4JEA36kuhG1Y"
+            alt=""
+          />
+        </div>
+        <div class="name">Meg Robichaud</div>
+        <div class="address">New York,NY</div>
+        <div class="introduce">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. </br>Laudantium
+          tempore assumenda at pariatur voluptatem facilis consectetur
+          perferendis placeat et,</br> numquam illum doloribus neque, quo
+          necessitatibus sequi ex atque ipsa quam?
+        </div>
+      </section>
+      <section>
+        <div class="num">
+          <div class="wrap">
+            <div class="item">
+              <div class="number">250</div>
+              <div class="text">folowing</div>
+            </div>
+            <div class="item">
+              <div class="number">2479</div>
+              <div class="text">folowing</div>
+            </div>
+            <div class="item">
+              <div class="number">942</div>
+              <div class="text">folowing</div>
+            </div>
+            <div class="item">
+              <div class="number">744</div>
+              <div class="text">folowing</div>
+            </div>
+          </div>
+          
+          <div class="">
+            <button>Chat</button>
+            <button>folow</button>
+          </div>
+        </div>
+        
+      </section>
+      <section class="Trading">
+        <div class="container">
+          <h2>Items Trading</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=10" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=11" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=12" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=13" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
