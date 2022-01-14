@@ -16,9 +16,6 @@
         padding: 0;
         box-sizing: border-box;
       }
-      /* #7FC2C2
-      #E1774B
-      #F4DB60 */
       :root {
         --maincolor: #dcdde1;
         --color: #f5f6fa;
@@ -28,13 +25,12 @@
         background: var(--color);
       }
       nav {
-        padding: 10px;
         position: relative;
         text-align: end;
       }
-      nav a {
+      a {
         text-decoration: none;
-        padding: 10px;
+        padding: 20px 10px;
         display: inline-block;
         color: black;
       }
@@ -59,6 +55,7 @@
       nav button:hover{
         background: #718093;
       }
+      
       select {
         border: none;
         padding: 5px;
@@ -130,6 +127,9 @@
       .Trading {
         background: var(--maincolor);
       }
+      .Trading h2{
+        padding: 10px 20px;
+      }
       .container{
         width: 80%;
         margin: auto;
@@ -138,14 +138,16 @@
       .cards{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
       }
       .card{
+        width: 22%;
         background: var(--color);
         margin: 10px;
         border-radius: 10px;
         overflow: hidden;
       }
-      .card-img{
+      .card-img img{
         width: 100%;
       }
       .card-text{
@@ -174,6 +176,74 @@
       .card-bottom button:hover{
         background: #718093;
       }
+      /* footer */
+      footer {
+        background: var(--color);
+        text-align: center;
+      }
+      footer a{
+        padding: 20px;
+      }
+      footer .photo{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        margin: 0px auto;
+        padding: 20px;
+
+      }
+      footer img{
+        width: 100%;
+      }
+      .copyright{
+        background: var(--buttoncolor);
+        padding: 10px;
+      }
+      @media screen and (max-width: 850px) {
+      .nav-toggle {
+        display: none;
+
+      }
+      .nav-show-menu{
+        display: block;
+      }
+      nav input, nav button,select {
+        display: none;
+      }
+      .container{
+        width: 95%;
+        margin: auto;
+        padding: 0;
+      }
+      .num, .card-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .Trading h2{
+        text-align: center;
+      }
+      .card{
+        width: 45%;
+      }
+      .about .photo {
+        width: 100px;
+        height: 100px;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    @media screen and (max-width: 500px) {
+    .wrap .item{
+        padding: 20px 0px;
+        margin: 10px;
+      }  
+      .card{
+        width: 90%;
+      }
+    }
     </style>
   </head>
   <body>
@@ -182,10 +252,11 @@
         <div class="nav-menu">
           <i class="fas fa-bars fa-2x"></i>
         </div>
-        <a href="#">Trade</a>
-        <a href="#">Clecks</a>
-        <a href="#">Trade</a>
-        <a href="#">Clecks</a>
+        <div class="nav-toggle">
+            <a href="#">About US</a>
+            <a href="#">Article</a>
+            <a href="#">Video</a>
+            <a href="#">Map</a>
         <select name="" id="">
           <option>please choose...</option>
           <option>Dog</option>
@@ -196,6 +267,7 @@
         <select name="" id="">
           <option>Sign In</option>
         </select>
+      </div>
       </nav>
       <div class="banner">
         <img
@@ -313,9 +385,167 @@
                 </div>
               </div>
             </div>
+            
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=10" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=11" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=12" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=13" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=10" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=11" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=12" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/300/200?random=13" alt="" />
+              </div>
+              <div class="card-text">
+                <h3 class="card-text-name">IPhone</h3>
+                <p class="card-text-introduce">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="card-bottom">
+                  <div class="mommy">$455</div>
+                  <button>buy me!!</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="photo">
+        <img
+          src="https://i.picsum.photos/id/318/200/200.jpg?hmac=bXfpcSpOySqXMIev1AISKO15vvxPgau4JEA36kuhG1Y"
+          alt=""
+        />
+      </div>
+      <a href="#">About US</a>
+      <a href="#">Article</a>
+      <a href="#">Video</a>
+      <a href="#">Map</a>
+      
+      <div class="copyright">
+        Copyright © BB Hotel Designed by Big Boy Can Code.
+      </div>
+    </footer>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //navbar toggle class
+      $(document).ready(function () {
+        let navMenu = $(".nav-menu");
+        let navToggle = $(".nav-toggle");
+        navMenu.click(function () {
+          // alert("click");
+          navToggle.toggleClass("nav-show-menu");
+        });
+      });
+    </script>
   </body>
 </html>
